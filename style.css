@@ -1,0 +1,198 @@
+
+/* GENERAL STYLING */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fffaf4;
+    line-height: 1.7;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 75px;
+}
+
+/* NAVBAR */
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+.navbar-brand span {
+    color: #f4a340;
+}
+
+.nav-link {
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #f4a340 !important;
+}
+
+/* ORANGE BUTTON */
+.btn-orange {
+    background-color: #e98232;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 5px;
+}
+
+.btn-orange:hover {
+    background-color: #c96720;
+    color: white;
+}
+
+/* HERO SECTION */
+.hero-section {
+    min-height: 550px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600")
+        center/cover no-repeat;
+}
+
+.hero-section h1 {
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero-section p {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* SECTION HEADINGS */
+.section-title {
+    color: #572b16;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    color: #e98232;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+/* MENU CARDS */
+.menu-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+.menu-card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.menu-card .card-body {
+    padding: 22px;
+}
+
+.menu-card .card-title {
+    color: #572b16;
+}
+
+.price {
+    color: #e98232;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ABOUT SECTION */
+.about-section {
+    background-color: #f5e8dc;
+}
+
+.about-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* ACCORDION */
+.accordion-button:not(.collapsed) {
+    background-color: #f5e8dc;
+    color: #572b16;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: #e98232;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    background-color: #f5e8dc;
+}
+
+.contact-section .card {
+    border-radius: 10px;
+}
+
+.form-control {
+    padding: 12px;
+}
+
+.form-control:focus {
+    border-color: #e98232;
+    box-shadow: 0 0 0 0.2rem rgba(233, 130, 50, 0.15);
+}
+
+/* FOOTER */
+.footer-section {
+    background-color: #292019;
+}
+
+.social-link {
+    display: inline-block;
+    color: white;
+    font-size: 22px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #f4a340;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+
+    .hero-section {
+        min-height: 450px;
+    }
+
+    .hero-section h1 {
+        font-size: 38px;
+    }
+
+    .about-image {
+        height: 280px;
+    }
+
+    .navbar .btn-orange {
+        margin-top: 12px;
+    }
+
+}
